@@ -310,17 +310,6 @@
 
                 
                 
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/deep-learning/乱搞的小玩意/" itemprop="url" rel="index">
-                    <span itemprop="name">乱搞的小玩意</span>
-                  </a>
-                </span>
-
-                
-                
               
             </span>
           
@@ -371,7 +360,8 @@
 </ol>
 <h3 id="Step5-在树莓派中部署"><a href="#Step5-在树莓派中部署" class="headerlink" title="Step5:在树莓派中部署"></a>Step5:在树莓派中部署</h3><p>   进入inference_engine_vpu_arm文件夹（就是树莓派中openVINO的根目录），打开/deployment_tools/inference_engine/samples/python_samples文件夹，找到object_detection_demo_yolov3.py文件然    cap.set(3,320)<br>   cap.set(4,240)<br>   cap.set(5,30)后，运行:python3 object_detection_demo_yolov3.py -m /home/pi/image-dec/yolo.xml -d MYRIAD -i cam<br>   请自行替换xml文件目录（注意，xml和bin文件要在同一目录且同名），-i 后面可以接视频文件地址，我这里用cam就是摄像头实时传输。</p>
 <p>   注意：如果你用的是usb摄像头且运行失败，用文本编辑打开该代码文件搜索cap，找到那一行往上看，有input_stream = 0 if args.input == “cam” else args.input，将“0”改为1再次运行，如果不行再改成2、3、4….不过一个NCS帧数着实有点低，建议自行搜索opencv代码改视频清晰度，反正我是在 cap = cv2.VideoCapture(input_stream)下面加了：<br>    cap.set(3,320)<br>    cap.set(4,240)<br>    cap.set(5,30)</p>
-<p>那么教程就到此为止了，我是小白，写文章有点混乱，见谅。不说了，先上个图（瞎JB拍的）：<br><img src="https://img-blog.csdnimg.cn/2019022018503946.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0x1Y2t5WGlhb1N1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>那么教程就到此为止了，我是小白，写文章有点混乱，见谅。不说了，先上个图（瞎JB拍的）：</p>
+<p><img src="/images/pasted-0.png" alt="upload successful"></p>
 
           
         
@@ -464,7 +454,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
