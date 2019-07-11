@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="detection,yolo,NCS,">
 
 
 
@@ -79,18 +79,19 @@
 
 
 
-<meta name="description" content="因特尔神经计算棒(NCS)+树莓派+yolo-v3实现object-detection踩了好多坑啊。。一言难尽 Step1:在树莓派上安装环境首先安装openVINO工具包（最好不要在树莓派上装NCSDK..太坑了），详情见这篇文章(https://blog.csdn.net/qqqzmy/article/details/85213414)。Step2:在windows中安装openVINO我要先">
+<meta name="description" content="因特尔神经计算棒(NCS)+树莓派+yolo-v3实现object-detection踩了好多坑啊。。一言难尽 Step1:在树莓派上安装环境   首先安装openVINO工具包（最好不要在树莓派上装NCSDK..太坑了），详情见这篇文章(https://blog.csdn.net/qqqzmy/article/details/85213414)。 Step2:在windows中安装openVIN">
+<meta name="keywords" content="detection,yolo,NCS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="因特尔神经计算棒(NCS)+树莓派+yolo-v3实现object-detection">
 <meta property="og:url" content="http://yoursite.com/2019/07/11/1/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="因特尔神经计算棒(NCS)+树莓派+yolo-v3实现object-detection踩了好多坑啊。。一言难尽 Step1:在树莓派上安装环境首先安装openVINO工具包（最好不要在树莓派上装NCSDK..太坑了），详情见这篇文章(https://blog.csdn.net/qqqzmy/article/details/85213414)。Step2:在windows中安装openVINO我要先">
+<meta property="og:description" content="因特尔神经计算棒(NCS)+树莓派+yolo-v3实现object-detection踩了好多坑啊。。一言难尽 Step1:在树莓派上安装环境   首先安装openVINO工具包（最好不要在树莓派上装NCSDK..太坑了），详情见这篇文章(https://blog.csdn.net/qqqzmy/article/details/85213414)。 Step2:在windows中安装openVIN">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/2019022018503946.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0x1Y2t5WGlhb1N1,size_16,color_FFFFFF,t_70">
-<meta property="og:updated_time" content="2019-07-11T08:34:05.355Z">
+<meta property="og:updated_time" content="2019-07-11T08:43:39.294Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="因特尔神经计算棒(NCS)+树莓派+yolo-v3实现object-detection">
-<meta name="twitter:description" content="因特尔神经计算棒(NCS)+树莓派+yolo-v3实现object-detection踩了好多坑啊。。一言难尽 Step1:在树莓派上安装环境首先安装openVINO工具包（最好不要在树莓派上装NCSDK..太坑了），详情见这篇文章(https://blog.csdn.net/qqqzmy/article/details/85213414)。Step2:在windows中安装openVINO我要先">
+<meta name="twitter:description" content="因特尔神经计算棒(NCS)+树莓派+yolo-v3实现object-detection踩了好多坑啊。。一言难尽 Step1:在树莓派上安装环境   首先安装openVINO工具包（最好不要在树莓派上装NCSDK..太坑了），详情见这篇文章(https://blog.csdn.net/qqqzmy/article/details/85213414)。 Step2:在windows中安装openVIN">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/2019022018503946.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0x1Y2t5WGlhb1N1,size_16,color_FFFFFF,t_70">
 
 
@@ -283,7 +284,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-11T16:33:05+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-11T16:33:00+08:00">
                 2019-07-11
               </time>
             
@@ -293,6 +294,39 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/deep-learning/" itemprop="url" rel="index">
+                    <span itemprop="name">deep learning</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/deep-learning/乱搞的小玩意/" itemprop="url" rel="index">
+                    <span itemprop="name">乱搞的小玩意</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -322,28 +356,24 @@
 
       
         <h1 id="因特尔神经计算棒-NCS-树莓派-yolo-v3实现object-detection"><a href="#因特尔神经计算棒-NCS-树莓派-yolo-v3实现object-detection" class="headerlink" title="因特尔神经计算棒(NCS)+树莓派+yolo-v3实现object-detection"></a>因特尔神经计算棒(NCS)+树莓派+yolo-v3实现object-detection</h1><p>踩了好多坑啊。。一言难尽</p>
-<h3 id="Step1-在树莓派上安装环境"><a href="#Step1-在树莓派上安装环境" class="headerlink" title="Step1:在树莓派上安装环境"></a>Step1:在树莓派上安装环境</h3><pre><code>首先安装openVINO工具包（最好不要在树莓派上装NCSDK..太坑了），详情见这篇文章(https://blog.csdn.net/qqqzmy/article/details/85213414)。</code></pre><h3 id="Step2-在windows中安装openVINO"><a href="#Step2-在windows中安装openVINO" class="headerlink" title="Step2:在windows中安装openVINO"></a>Step2:在windows中安装openVINO</h3><pre><code>我要先说明一下,因为树莓派中安装的openVINO是阉割版功能不全。所以为了实现tensorflow格式转换成movidius的格式，还得在windows上安装一遍openVINO。emmm，安装方法我就直接贴文章了吧(https://blog.csdn.net/qq_36556893/article/details/81385008)</code></pre><h3 id="Step3-将keras转换为tensorflow格式"><a href="#Step3-将keras转换为tensorflow格式" class="headerlink" title="Step3:将keras转换为tensorflow格式"></a>Step3:将keras转换为tensorflow格式</h3><pre><code>因为NCS只支持转换tensorflow格式，而yolo-v3又是keras格式，所以还要转换一遍。不过还好在git上找到了大神写的代码（https://github.com/mystic123/tensorflow-yolo-v3）
-1、git clone https://github.com/mystic123/tensorflow-yolo-v3
-2、cd tensorflow-yolo-v3
-3、下载yolo文件至当前文件夹
-    coco.name(https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names)
-    yolo-v3.weight(wget https://pjreddie.com/media/files/yolov3.weights)
-4、开始转换得到frozen_darknet_yolov3_model.pb
-    用cmd运行
-    python ./convert_weights.py
-    python ./convert_weights_pb.py
-5（可选）、按照GitHub上的说明用pb文件运行一遍</code></pre><h3 id="Step4-将tensorflow转换为movidius格式（-xml-amp-bin）"><a href="#Step4-将tensorflow转换为movidius格式（-xml-amp-bin）" class="headerlink" title="Step4:将tensorflow转换为movidius格式（.xml &amp; .bin）"></a>Step4:将tensorflow转换为movidius格式（.xml &amp; .bin）</h3><pre><code>打开openVINO的根目录,进入(这是我的路径)D:\Intel\computer_vision_sdk\deployment_tools\model_optimizer 
-1、进入目录\install_prerequisites，运行install_prerequisites_tf.bat文件
-2、返回上一目录运行python mo_tf.py --input_model E:\tensorflow-yolo-v3\frozen_darknet_yolov3_model.pb --tensorflow_use_custom_operations_config D:\Intel\computer_vision_sdk\deployment_tools\model_optimizer\extensions\front\tf\yolo_v3.json --input_shape=[1,416,416,3]  --data_type=FP16（请自行替换文中路径）
-得到.xml和.bin文件</code></pre><h3 id="Step5-在树莓派中部署"><a href="#Step5-在树莓派中部署" class="headerlink" title="Step5:在树莓派中部署"></a>Step5:在树莓派中部署</h3><pre><code>进入inference_engine_vpu_arm文件夹（就是树莓派中openVINO的根目录），打开/deployment_tools/inference_engine/samples/python_samples文件夹，找到object_detection_demo_yolov3.py文件然    cap.set(3,320)
-cap.set(4,240)
-cap.set(5,30)后，运行:python3 object_detection_demo_yolov3.py -m /home/pi/image-dec/yolo.xml -d MYRIAD -i cam
-请自行替换xml文件目录（注意，xml和bin文件要在同一目录且同名），-i 后面可以接视频文件地址，我这里用cam就是摄像头实时传输。
-
-注意：如果你用的是usb摄像头且运行失败，用文本编辑打开该代码文件搜索cap，找到那一行往上看，有input_stream = 0 if args.input == &quot;cam&quot; else args.input，将“0”改为1再次运行，如果不行再改成2、3、4....不过一个NCS帧数着实有点低，建议自行搜索opencv代码改视频清晰度，反正我是在 cap = cv2.VideoCapture(input_stream)下面加了：   
-cap.set(3,320)
-cap.set(4,240)
-cap.set(5,30)</code></pre><p>那么教程就到此为止了，我是小白，写文章有点混乱，见谅。不说了，先上个图（瞎JB拍的）：<br><img src="https://img-blog.csdnimg.cn/2019022018503946.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0x1Y2t5WGlhb1N1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="Step1-在树莓派上安装环境"><a href="#Step1-在树莓派上安装环境" class="headerlink" title="Step1:在树莓派上安装环境"></a>Step1:在树莓派上安装环境</h3><p>   首先安装openVINO工具包（最好不要在树莓派上装NCSDK..太坑了），详情见这篇文章(<a href="https://blog.csdn.net/qqqzmy/article/details/85213414)。" target="_blank" rel="noopener">https://blog.csdn.net/qqqzmy/article/details/85213414)。</a></p>
+<h3 id="Step2-在windows中安装openVINO"><a href="#Step2-在windows中安装openVINO" class="headerlink" title="Step2:在windows中安装openVINO"></a>Step2:在windows中安装openVINO</h3><p>   我要先说明一下,因为树莓派中安装的openVINO是阉割版功能不全。所以为了实现tensorflow格式转换成movidius的格式，还得在windows上安装一遍openVINO。emmm，安装方法我就直接贴文章了吧(<a href="https://blog.csdn.net/qq_36556893/article/details/81385008" target="_blank" rel="noopener">https://blog.csdn.net/qq_36556893/article/details/81385008</a>)</p>
+<h3 id="Step3-将keras转换为tensorflow格式"><a href="#Step3-将keras转换为tensorflow格式" class="headerlink" title="Step3:将keras转换为tensorflow格式"></a>Step3:将keras转换为tensorflow格式</h3><p>   因为NCS只支持转换tensorflow格式，而yolo-v3又是keras格式，所以还要转换一遍。不过还好在git上找到了大神写的代码（<a href="https://github.com/mystic123/tensorflow-yolo-v3）" target="_blank" rel="noopener">https://github.com/mystic123/tensorflow-yolo-v3）</a></p>
+<ol>
+<li>git clone <a href="https://github.com/mystic123/tensorflow-yolo-v3" target="_blank" rel="noopener">https://github.com/mystic123/tensorflow-yolo-v3</a></li>
+<li>cd tensorflow-yolo-v3</li>
+<li>下载yolo文件至当前文件夹<br>  coco.name(<a href="https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names" target="_blank" rel="noopener">https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names</a>)<br>  yolo-v3.weight(wget <a href="https://pjreddie.com/media/files/yolov3.weights" target="_blank" rel="noopener">https://pjreddie.com/media/files/yolov3.weights</a>)</li>
+<li>开始转换得到frozen_darknet_yolov3_model.pb<br>  用cmd运行<br>  python ./convert_weights.py<br>  python ./convert_weights_pb.py</li>
+<li>（可选）按照GitHub上的说明用pb文件运行一遍</li>
+</ol>
+<h3 id="Step4-将tensorflow转换为movidius格式（-xml-amp-bin）"><a href="#Step4-将tensorflow转换为movidius格式（-xml-amp-bin）" class="headerlink" title="Step4:将tensorflow转换为movidius格式（.xml &amp; .bin）"></a>Step4:将tensorflow转换为movidius格式（.xml &amp; .bin）</h3><p>   打开openVINO的根目录,进入(这是我的路径)D:\Intel\computer_vision_sdk\deployment_tools\model_optimizer </p>
+<ol>
+<li>进入目录\install_prerequisites，运行install_prerequisites_tf.bat文件</li>
+<li>返回上一目录运行python mo_tf.py –input_model E:\tensorflow-yolo-v3\frozen_darknet_yolov3_model.pb –tensorflow_use_custom_operations_config D:\Intel\computer_vision_sdk\deployment_tools\model_optimizer\extensions\front\tf\yolo_v3.json –input_shape=[1,416,416,3]  –data_type=FP16（请自行替换文中路径）<br>得到.xml和.bin文件</li>
+</ol>
+<h3 id="Step5-在树莓派中部署"><a href="#Step5-在树莓派中部署" class="headerlink" title="Step5:在树莓派中部署"></a>Step5:在树莓派中部署</h3><p>   进入inference_engine_vpu_arm文件夹（就是树莓派中openVINO的根目录），打开/deployment_tools/inference_engine/samples/python_samples文件夹，找到object_detection_demo_yolov3.py文件然    cap.set(3,320)<br>   cap.set(4,240)<br>   cap.set(5,30)后，运行:python3 object_detection_demo_yolov3.py -m /home/pi/image-dec/yolo.xml -d MYRIAD -i cam<br>   请自行替换xml文件目录（注意，xml和bin文件要在同一目录且同名），-i 后面可以接视频文件地址，我这里用cam就是摄像头实时传输。</p>
+<p>   注意：如果你用的是usb摄像头且运行失败，用文本编辑打开该代码文件搜索cap，找到那一行往上看，有input_stream = 0 if args.input == “cam” else args.input，将“0”改为1再次运行，如果不行再改成2、3、4….不过一个NCS帧数着实有点低，建议自行搜索opencv代码改视频清晰度，反正我是在 cap = cv2.VideoCapture(input_stream)下面加了：<br>    cap.set(3,320)<br>    cap.set(4,240)<br>    cap.set(5,30)</p>
+<p>那么教程就到此为止了，我是小白，写文章有点混乱，见谅。不说了，先上个图（瞎JB拍的）：<br><img src="https://img-blog.csdnimg.cn/2019022018503946.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0x1Y2t5WGlhb1N1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 
       
     </div>
@@ -358,6 +388,16 @@ cap.set(5,30)</code></pre><p>那么教程就到此为止了，我是小白，写
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/detection/" rel="tag"># detection</a>
+          
+            <a href="/tags/yolo/" rel="tag"># yolo</a>
+          
+            <a href="/tags/NCS/" rel="tag"># NCS</a>
+          
+        </div>
       
 
       
@@ -444,7 +484,25 @@ cap.set(5,30)</code></pre><p>那么教程就到此为止了，我是小白，写
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
